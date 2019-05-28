@@ -10,7 +10,7 @@ This small DApp shows you how you can access resources on your AVADO box.
 
 ```
 yarn build 
-ipfs --api  /dns4/my.ipfs.dns.dappnode.eth/tcp/5001 add -r build
+ipfs --api  /dns4/my.ipfs.dnp.dappnode.eth/tcp/5001 add -r build
 ```
 
 This will result in all files being uploaded... Note the last IPFS hash
