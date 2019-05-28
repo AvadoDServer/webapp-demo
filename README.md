@@ -21,7 +21,16 @@ added QmTdAMoTqEKGQ58zAZPwYShjL23f3H7xWsbDFpmNxi7sF3 build
 
 Then browse to the IPFS hash of the 'build' folder.
 
-[`http://my.ipfs.dnp.dappnode.eth:8080/ipfs/QmTdAMoTqEKGQ58zAZPwYShjL23f3H7xWsbDFpmNxi7sF3`]
+The root path to access IPFS is
+
+`http://my.ipfs.dnp.dappnode.eth:8080/ipfs/`
+
+
+So add your hash to access the app: 
+
+`http://my.ipfs.dnp.dappnode.eth:8080/ipfs/QmTdAMoTqEKGQ58zAZPwYShjL23f3H7xWsbDFpmNxi7sF3`
+
+
 
 
 
