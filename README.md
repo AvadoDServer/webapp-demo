@@ -1,6 +1,8 @@
 # AVADO sample web-app
 
-# To install and run locally:
+This small DApp shows you how you can access resources on your AVADO box.
+
+## To install and run locally:
 
 `yarn && yarn start`
 
