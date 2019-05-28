@@ -21,7 +21,7 @@ added QmTdAMoTqEKGQ58zAZPwYShjL23f3H7xWsbDFpmNxi7sF3 build
 
 Then browse to the IPFS hash of the 'build' folder.
 
-`http://my.ipfs.dnp.dappnode.eth:8080/ipfs/<the ipfs hash>`
+[`http://my.ipfs.dnp.dappnode.eth:8080/ipfs/QmTdAMoTqEKGQ58zAZPwYShjL23f3H7xWsbDFpmNxi7sF3`]
 
 
 
