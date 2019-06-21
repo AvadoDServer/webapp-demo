@@ -8,7 +8,15 @@ function App() {
     const [blockNumber, setBlocknumber] = React.useState();
 
     React.useEffect(() => {
-        const provider = new providers.JsonRpcProvider("http://my.ethchain.dnp.dappnode.eth:8545");
+        // goerli testnet
+        //const provider = new providers.JsonRpcProvider("http://172.20.0.103:8545");
+
+        // ropsten testnet
+        //const provider = new providers.JsonRpcProvider("http://172.20.0.103:8555");
+
+        // mainnet
+        const provider = new providers.JsonRpcProvider("http://172.20.0.101:8545");
+
 
         provider.getBlockNumber().then((blockNumber) => {
             setBlocknumber(blockNumber);
