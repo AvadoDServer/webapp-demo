@@ -6,16 +6,17 @@ import { providers } from "ethers";
 function App() {
 
     const [blockNumber, setBlocknumber] = React.useState();
+    const [nodeAddressfield, setNodeAddressfield] = React.useState("http://my.ethchain-geth.public.dappnode.eth:8545/");
+    // const [provider, setProvider] = React.useState();
 
     React.useEffect(() => {
-        // goerli testnet
-        //const provider = new providers.JsonRpcProvider("http://172.20.0.103:8545");
+        applyProvider();
+    });
 
-        // ropsten testnet
-        //const provider = new providers.JsonRpcProvider("http://172.20.0.103:8555");
+    const applyProvider = () => {
 
         // mainnet
-        const provider = new providers.JsonRpcProvider("http://172.20.0.101:8545");
+        const provider = new providers.JsonRpcProvider(nodeAddressfield);
 
 
         provider.getBlockNumber().then((blockNumber) => {
@@ -26,11 +27,15 @@ function App() {
             setBlocknumber(blockNumber);
         });
 
-    }, []);
+        // setProvider(provider);
+
+    }
 
     return (
         <div className="App">
             <header className="App-header">
+                <input onChange={(e) => { setNodeAddressfield(e.target.value) }} value={nodeAddressfield} />
+                <button onClick={applyProvider}>Set provider</button>
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
                     {blockNumber}
